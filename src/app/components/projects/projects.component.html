@@ -1,4 +1,33 @@
 <section class="content-section">
     <h2 class="primary-title">Projects</h2>
+    <div class="info-section">
+        <div class="flex-row info-section-container" *ngFor="let section of projectsData">
+            <div class="info-section--box-light">
+                <h3 class="secondary-title">
+                    {{section.title}}
+                </h3>
+                <div class="info-section-text">
+                    <div class="flex-row project-container flex-align-centre" *ngFor="let project of section.projects">
+                        <!-- <a [href]="project.link">
+                            <img class="project-image" [src]="project.image" [alt]="project.label" />
+                        </a> -->
+                        <div class="flex-col project-header">
+                            <div class="project-header-row">
+                                <a class="github-link" [href]="project.link" target="_blank"
+                                    attr.aria-label="Link to {{project.label}}">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </a>
+                                <strong>{{project.label}}</strong>
+                                <!-- <a class="github-link" [href]="project.link" target="_blank"
+                                    attr.aria-label="Link to {{project.label}}">
+                                    <i class="fa fa-github fa-2x"></i>
+                                </a> -->
+                            </div>
+                            <p>{{project.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- Separate into 2 sections. Open Source (projects I like or contribute to) and personal which is github shit -->

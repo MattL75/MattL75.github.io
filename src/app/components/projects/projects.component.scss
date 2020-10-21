@@ -27,3 +27,37 @@
         );
     }
 }
+
+.project-container {
+    padding: 18px 0;
+}
+
+[class~="project-container"]:last-of-type {
+    padding-bottom: 0;
+}
+
+.project-image {
+    width: 80px;
+    margin-right: 28px;
+}
+
+.project-header {
+    justify-content: center;
+}
+
+.project-header-row {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    a {
+        margin-right: 24px;
+    }
+}
+
+.github-link {
+    color: var(--text);
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        color: grey;
+    }
+}
