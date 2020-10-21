@@ -1,0 +1,52 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 48px;
+    background-color: var(--secondary);
+    color: var(--text-secondary);
+    z-index: 100;
+
+    &::before {
+        background: url(../../../assets/wave.svg) center top/1440px 80px
+            repeat-x;
+        bottom: -80px;
+        content: "";
+        display: block;
+        height: 80px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 992px) {
+        padding-bottom: 24px;
+    }
+}
+
+.education {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1em;
+
+    strong {
+        margin-bottom: 6px;
+    }
+
+    &-left {
+        max-width: 30%;
+        flex-grow: 0.3;
+        flex-basis: 0;
+        margin-right: 24px;
+    }
+
+    &-right {
+        flex-grow: 0.7;
+        flex-basis: 0;
+        min-width: 175px;
+    }
+
+    &-middler {
+        margin-top: 1.4em;
+    }
+}

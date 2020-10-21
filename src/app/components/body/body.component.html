@@ -1,0 +1,37 @@
+<nav class="body-nav">
+    <div class="body-nav-container">
+        <div class="body-nav--logo cursive" (click)="scrollToTop()">
+            Matt
+            <span class="body-nav--logo-last">Lajoie</span>
+        </div>
+        <!-- TODO: Make this dynamic and make the key for i18n dynamic -->
+        <div class="body-nav--menu">
+            <span class="body-nav--menu-item">
+                <a href="#About" (click)="scrollToElement('About', $event)">About</a>
+                <span class="hover-effect"></span>
+            </span>
+            <span class="body-nav--menu-item">
+                <a href="#Career" (click)="scrollToElement('Career', $event)">Career</a>
+                <span class="hover-effect"></span>
+            </span>
+            <span class="body-nav--menu-item">
+                <a href="#Skills" (click)="scrollToElement('Skills', $event)">Skills</a>
+                <span class="hover-effect"></span>
+            </span>
+            <span class="body-nav--menu-item">
+                <a href="#Projects" (click)="scrollToElement('Projects', $event)">Projects</a>
+                <span class="hover-effect"></span>
+            </span>
+            <span class="body-nav--menu-item">
+                <a href="#Contact" (click)="scrollToElement('Contact', $event)">Contact</a>
+                <span class="hover-effect"></span>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<ml-about id="About"></ml-about>
+<ml-career id="Career"></ml-career>
+<ml-skills id="Skills"></ml-skills>
+<ml-projects id="Projects"></ml-projects>
+<ml-contact id="Contact"></ml-contact>

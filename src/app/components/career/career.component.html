@@ -1,0 +1,28 @@
+<section class="content-section">
+    <h2 class="primary-title">Career</h2>
+    <div class="info-section">
+        <div class="flex-row info-section-container" *ngFor="let section of career">
+            <div class="info-section--box-light">
+                <h3 class="secondary-title">
+                    {{section.title}}
+                </h3>
+                <div class="info-section-text">
+                    <div class="flex-col experience-container" *ngFor="let exp of section.experiences">
+                        <div class="flex-row">
+                            <img class="experience-image" [src]="exp.image" [alt]="exp.company" />
+                            <div class="flex-col experience-header">
+                                <strong>{{exp.company}}</strong>
+                                <span>{{exp.title}}</span>
+                                <span>{{exp.timeFrame}}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>{{exp.description}}</p>
+                            <p>{{exp.closingWords}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

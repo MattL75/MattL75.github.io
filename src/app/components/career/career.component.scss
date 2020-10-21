@@ -1,0 +1,49 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+    background-color: var(--secondary-dark);
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 2;
+
+    .primary-title {
+        margin-top: 90px;
+    }
+
+    &::before {
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0px;
+        background: linear-gradient(
+            to left bottom,
+            var(--secondary) 49%,
+            var(--secondary-dark) 50%
+        );
+    }
+}
+
+.info-section {
+    margin-bottom: 0;
+}
+
+.experience-container {
+    padding: 18px 0;
+}
+
+[class~="experience-container"]:last-of-type {
+    padding-bottom: 0;
+}
+
+.experience-image {
+    width: 80px;
+    margin-right: 28px;
+}
+
+.experience-header {
+    justify-content: center;
+}

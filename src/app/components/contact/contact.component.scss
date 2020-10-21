@@ -1,0 +1,24 @@
+.contact-page {
+    padding: 68px 20px;
+    font-size: 18px;
+    margin: 0;
+
+    a {
+        font-size: 1em;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        color: var(--secondary);
+
+        &:hover {
+            color: grey;
+        }
+    }
+}
+
+.pad-right {
+    margin-right: 32px;
+}
+
+.icon-row {
+    margin-top: 32px;
+}

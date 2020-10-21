@@ -1,0 +1,30 @@
+<section class="content-section">
+    <h2 class="primary-title">Skills</h2>
+    <div class="info-section">
+        <div class="flex-row info-section-container" *ngFor="let section of skills">
+            <div class="info-section--box-light">
+                <h3 class="secondary-title">
+                    {{section.title}}
+                </h3>
+                <div class="info-section-text">
+                    <div class="flex-row skill-table">
+                        <ul class="flex-col skill-grow no-list-style first-list">
+                            <li class="flex-row skill-item"
+                                *ngFor="let skill of section.skills | slice:0:(section.skills.length / 2)">
+                                <span class="skill-label">{{skill.label}}</span>
+                                <ml-star-rating [score]="skill.rating"></ml-star-rating>
+                            </li>
+                        </ul>
+                        <ul class="flex-col skill-grow no-list-style second-list">
+                            <li class="flex-row skill-item"
+                                *ngFor="let skill of section.skills | slice:(section.skills.length / 2)">
+                                <span class="skill-label">{{skill.label}}</span>
+                                <ml-star-rating [score]="skill.rating"></ml-star-rating>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
