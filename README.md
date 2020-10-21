@@ -21,4 +21,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Deploying
 
-TODO
+Run `ng deploy` to deploy the site to github pages.
