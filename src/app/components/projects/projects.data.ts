@@ -33,6 +33,12 @@ export const projectsData: ProjectSection[] = [
                 description: 'Part of the Comp 472 AI class at Concordia University, made in Java. The goal was to implement both a unigram and bigram language identification model. It was a fun experience and taught us a lot about AI, datasets, and the power of NLP.',
                 link: 'https://github.com/MattL75/ai-language-models',
                 image: '../../../assets/ineatlogo.png'
+            },
+            {
+                label: 'Mur à Mur',
+                description: 'Our entry to Sherbrooke Hackathon 2016 that won second place and the ZAP prize for a total of $1500 in winnings. The project is an android app that helps locals or tourists discover the murals of Sherbrooke by unlocking achievements and key locations on the map when a user finds a mural.',
+                link: 'https://github.com/MattL75/mur-a-mur',
+                image: '../../../assets/ineatlogo.png'
             }
         ]
     },
