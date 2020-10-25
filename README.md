@@ -4,8 +4,6 @@ Repository for my personal website, which serves as a digital resume.
 
 I initially started this project early 2019 before my graduation, but only now (late 2020) decided to finish it. Mostly because I was bored.
 
-It's still in progress, but almost done :)
-
 ## Running Locally
 
 1. Install [Node.js and npm](https://nodejs.org/en/download/).
