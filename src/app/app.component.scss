@@ -45,6 +45,7 @@
         cursor: pointer;
         transition: all 250ms ease-in-out;
         user-select: none;
+        visibility: hidden;
 
         &-last {
             color: var(--accent);
@@ -56,6 +57,7 @@
 
         @media only screen and (min-width: 576px) {
             font-size: 36px;
+            visibility: visible;
         }
     }
 
