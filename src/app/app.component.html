@@ -1,2 +1,41 @@
-<ml-header></ml-header>
-<ml-body></ml-body>
+<mat-sidenav-container>
+    <mat-sidenav position="end" [(opened)]="isOpen" (closed)="setBodyOverflow('auto')">
+        <div class="flex-col sidebar-main">
+            <div class="flex-row sidebar-header">
+                <h3><strong>Navigation</strong></h3>
+                <button class="icon-button--secondary" (click)="toggleIsOpen()" aria-label="Close navigation menu.">
+                    <i class="fa fa-times fa-2x"></i>
+                </button>
+            </div>
+            <a *ngFor="let item of navList" href="#{{item}}" (click)="scrollToElement(item, $event)"
+                attr.aria-label="Navigate to {{item}} section.">
+                <span class="body-nav--menu-item">{{item}}
+                    <span class="hover-effect"></span>
+                </span>
+            </a>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <nav class="body-nav">
+            <div class="body-nav-container">
+                <div class="body-nav--logo cursive" (click)="scrollToTop()">
+                    Matt
+                    <span class="body-nav--logo-last">Lajoie</span>
+                </div>
+                <div class="body-nav--menu" *ngIf="!isSmallScreen()">
+                    <span class="body-nav--menu-item" *ngFor="let item of navList">
+                        <a href="#{{item}}" (click)="scrollToElement(item, $event)"
+                            attr.aria-label="Navigate to {{item}} section.">{{item}}</a>
+                        <span class="hover-effect"></span>
+                    </span>
+                </div>
+                <button *ngIf="isSmallScreen()" class="icon-button" (click)="toggleIsOpen()"
+                    aria-label="Open navigation menu.">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+            </div>
+        </nav>
+        <ml-header></ml-header>
+        <ml-body></ml-body>
+    </mat-sidenav-content>
+</mat-sidenav-container>

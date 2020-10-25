@@ -26,7 +26,9 @@ export class ImageCarouselComponent implements OnInit, OnDestroy, AfterViewInit 
     ngAfterViewInit(): void {
         // Needed for specific cases where the carousel renders incorrectly.
         if (this.carouselElement.getBoundingClientRect().height < 300) {
-            window.dispatchEvent(new Event('resize'));
+            setTimeout(() => {
+                window.dispatchEvent(new Event('resize'));
+            }, 100)
         }
     }
 

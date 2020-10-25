@@ -1,3 +1,4 @@
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CommonModule } from '@angular/common';
 import { ImageCarouselComponent } from './components/about/image-carousel/image-carousel.component';
 import { StarRatingComponent } from './components/skills/star-rating/star-rating.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import { StarRatingComponent } from './components/skills/star-rating/star-rating
     ],
     imports: [
         BrowserModule,
-        CommonModule
+        CommonModule,
+        BrowserAnimationsModule,
+        MatSidenavModule
     ],
     providers: [],
     bootstrap: [AppComponent]
