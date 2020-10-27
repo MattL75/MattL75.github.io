@@ -6,7 +6,7 @@ I initially started this project early 2019 before my graduation, but only now (
 
 ## Why Angular?
 
-Well I use React daily at work, so I definitely didn't want nor need to practice that! I also missed Angular, after having spent over a year without using it. It's the framework I get the most enjoyment out of.
+I use React daily at work, so I definitely didn't want nor need to practice that! I also missed Angular, after having spent over a year without using it. It's the framework I get the most enjoyment out of.
 
 ## Running Locally
 
